@@ -1,0 +1,168 @@
+﻿/*  border: 4px double #fd0000; */
+
+
+
+body { /*Фон + основной цвет текста */
+	background-color: white;
+	color: #000000;
+}
+.wrapper { /* Грид */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.one { /* Логотип */
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 1;
+}
+img:hover { 
+ filter: brightness(120%) drop-shadow(16px 16px 10px #808080) ;
+}
+.two {  /* Контакты */
+
+  grid-column-start: 5; 
+  grid-column-end: 7; 
+  grid-row-start: 2;
+  grid-row-end: 8;
+    text-align: center;
+    font-size: 1.0vw;
+}
+.three { /* Меню */
+      grid-column-start: 2;
+      grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1vw;
+      text-align: center;
+  }
+          div#menu { /* Общие настройки меню */
+            display:inline-block;
+            font-size: 1.0vw;
+          height: 99%;
+         }
+        .menu_button{ /* Настройки кнопок  */
+            display:inline-block;
+            box-shadow: 0 0 10px 0 rgb(141, 140, 140), 0 0 6px 0 rgb(128, 128, 128), 0 0 10px 0 rgb(121, 121, 121);
+            background: #ffff66; /* Цвет фона */
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 200px;
+            margin: 10px ;
+         }
+		  .menu_button:hover {
+    box-shadow: 0 0 10px 0 rgb(211, 172, 239), 0 0 6px 0 rgb(226, 185, 255), 0 0 10px 0 rgb(218, 176, 250);
+}
+         pre#Counter { /* Счетчики */
+         line-height: 1.5;
+         text-align: center;
+         }
+.four { /* Контент */
+	opacity: 0.9;
+	background: #f2f3f4; /* Цвет фона */
+	height: 100%;
+	color: #000000;
+	font-size: 1.5vw;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 16;
+}
+         img#Img_body{ /* Картинка */
+         float: left;
+         margin-right: 5%;
+         margin-left: 5%;
+          }
+          div#BodyImg { /* Текст */
+          text-align: justify;
+          display: inline-block;
+          background-size: 40%, 100%;
+		  margin: 0 3% 0 3%;
+          }
+          div#BodyImgText { /* Заглавление */
+          text-align: center;
+          font-size: 2vw;
+          }
+.five { /* Блок рекламы и что-то там о копирайте */
+  text-align: center;
+  font-size: 1.0vw;
+  grid-column-start: 5; 
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+.six { /* Блок рекламы и что-то там о копирайте */
+    position: sticky;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-size: 1vw;
+
+}
+div#Copyright { /* что-то там о копирайте */
+  top: 90%;
+  color: #C0C0C0;
+}
+.menu_button_1{ /* Настройки кнопок  */
+    color: #ff0000;
+    box-shadow: 0 0 10px 0 rgba(255,255,0,0.6), 0 0 6px 0 rgba(255,255,0,0.8), 0 0 10px 0 rgba(255,255,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    height: 30px;
+}
+.menu_button_1:hover {
+    box-shadow: 0 0 10px 0 rgba(0,255,0,0.6), 0 0 6px 0 rgba(0, 255, 0, 0.8), 0 0 10px 0 rgba(0, 255, 0, 0.6);
+}
+
+.footer
+{
+    position: fixed;
+    left: 0; bottom: 0;
+}
+
+.wrapper1 { /* Грид */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.one1 { /* рис 1 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.one2 { /* рис 2 */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.one3 { /* оп 1 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.one4 { /* оп 1 */
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.admin_part
+{
+    position: sticky;
+    top: 0;
+    background: #fff400; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5%; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */
+    z-index: 1;
+    text-align: center;
+}
